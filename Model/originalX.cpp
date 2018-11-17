@@ -13,5 +13,10 @@ OriginalX::OriginalX()
     b = 5;
 };
 
+void OriginalX::accept(Visitors::Visitor visitor){
+    
+}
+
+
 }
 

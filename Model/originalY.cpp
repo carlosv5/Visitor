@@ -9,7 +9,9 @@ OriginalY::OriginalY()
 {
     a = 1;
     e1 = new E1();
-    e2 = new E21();
+    e2 = new E22();
 };
-
+void OriginalY::accept(Visitors::Visitor visitor){
+    
+}
 }

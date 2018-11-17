@@ -2,12 +2,15 @@
 #define E21_MODEL
 
 #include "e2.hpp"
+#include "../Visitors/Visitor.hpp"
+
 
 namespace Model{
 class E21 : public E2
 {
   public:
-    E21();
+    E21(){};
+    void accept(Visitors::Visitor visitor){}
 };
 }
 

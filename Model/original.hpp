@@ -2,12 +2,13 @@
 #define ORIGINAL_MODEL
 #include "e1.hpp"
 #include "e2.hpp"
+#include "../Visitors/Visitor.hpp"
 
 namespace Model{
 class Original
 {
   public:
-    Original();
+  virtual void accept(Visitors::Visitor visitor) = 0;
 
   protected:
     int a;
