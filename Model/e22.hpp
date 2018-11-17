@@ -2,7 +2,7 @@
 #define E22_MODEL
 
 #include "e2.hpp"
-#include "../Visitors/Visitor.hpp"
+#include "../Visitors/visitor.hpp"
 
 
 namespace Model{

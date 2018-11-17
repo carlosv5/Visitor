@@ -4,8 +4,7 @@
 namespace Visitors{
 class Visitor
 {
-  public:
-    Visitor();
+
 };
 }
 

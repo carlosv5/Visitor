@@ -1,6 +1,6 @@
 #ifndef E3_MODEL
 #define E3_MODEL
-#include "../Visitors/Visitor.hpp"
+#include "../Visitors/visitor.hpp"
 
 
 namespace Model{

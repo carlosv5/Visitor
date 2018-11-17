@@ -8,7 +8,7 @@ clean:
 clean_objects: 
 	rm *.o
 
-pattern: client.o originalX.o originalY.o 
+pattern: client.o originalX.o originalY.o visitor20.o
 	g++ client.o originalX.o originalY.o -o pattern $(FLAGS) 
 	make clean_objects
 
@@ -21,6 +21,8 @@ originalX.o: Model/originalX.cpp Model/originalX.hpp Model/original.hpp Model/e1
 originalY.o: Model/originalY.cpp Model/originalY.hpp Model/original.hpp Model/e1.hpp Model/e2.hpp Model/e22.hpp Model/e3.hpp
 	g++ -c Model/originalY.cpp
 
+visitor20.o: Visitors/visitor20.cpp Visitors/visitor20.hpp Visitors/visitor.hpp Model/e1.hpp Model/e3.hpp
+	g++ -c Visitors/visitor20.cpp
 
 
 

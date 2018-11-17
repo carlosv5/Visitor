@@ -2,7 +2,7 @@
 #define ORIGINAL_MODEL
 #include "e1.hpp"
 #include "e2.hpp"
-#include "../Visitors/Visitor.hpp"
+#include "../Visitors/visitor.hpp"
 
 namespace Model{
 class Original

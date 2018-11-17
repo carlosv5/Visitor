@@ -1,6 +1,6 @@
 #ifndef E1_MODEL
 #define E1_MODEL
-#include "../Visitors/Visitor.hpp"
+#include "../Visitors/visitor.hpp"
 
 namespace Model{
 class E1
