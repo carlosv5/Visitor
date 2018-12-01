@@ -1,4 +1,10 @@
 @startuml
+package "Client"{
+class Client{
+{method} + int main();
+}
+}
+
 package "Model"{
 class Original{
 {field}  - int a;
