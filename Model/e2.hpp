@@ -4,8 +4,8 @@
 
 class E2
 {
-    protected:
-      void accept(Visitor visitor);
+    public:
+      virtual void accept(Visitor visitor){};
 };
 
 

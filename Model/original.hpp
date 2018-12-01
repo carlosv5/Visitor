@@ -15,7 +15,7 @@ class Original
   virtual void accept(Visitor *visitor){}
   virtual int getA(){return a;}  
   virtual E1 getE1(){return *e1;}
-  virtual E2 getE2(){return *e2;}
+  virtual E2* getE2(){return e2;}
 
   protected:
     int a;
