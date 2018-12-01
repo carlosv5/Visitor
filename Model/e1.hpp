@@ -1,6 +1,6 @@
 #ifndef E1_MODEL
 #define E1_MODEL
-class Visitor;
+#include "../Visitors/visitor.hpp"
 
 class E1
 {

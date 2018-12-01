@@ -1,4 +1,4 @@
-#ifndef ORIGINALY_MODEL
+/* #ifndef ORIGINALY_MODEL
 #define ORIGINALY_MODEL
 
 #include "original.hpp"
@@ -10,7 +10,7 @@ class OriginalY : public Original
 {
   public:
     OriginalY();
-    void accept(Visitor *visitor);
+    //void accept(Visitor *visitor);
     E3 getE3();
 
 
@@ -19,4 +19,4 @@ class OriginalY : public Original
 };
 
 
-#endif
+#endif */

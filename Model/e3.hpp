@@ -7,7 +7,7 @@ class E3
 {
   public:
     E3(){};
-    void accept(Visitor *visitor){visitor->visit(this);}
+    //void accept(Visitor *visitor){visitor->visit(this);}
 
 };
 

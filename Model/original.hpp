@@ -2,7 +2,7 @@
 #define ORIGINAL_MODEL
 #include "e1.hpp"
 #include "e2.hpp"
-class Visitor;
+#include "../Visitors/visitor.hpp"
 #include <iostream>
 
 class Original

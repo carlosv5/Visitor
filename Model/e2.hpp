@@ -6,7 +6,7 @@ class Visitor;
 class E2
 {
     protected:
-     void accept(Visitor visitor);
+     //void accept(Visitor visitor);
 };
 
 

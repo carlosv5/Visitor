@@ -8,7 +8,7 @@ class E22 : public E2
 {
   public:
     E22(){};
-    void accept(Visitor *visitor){visitor->visit(this);}
+    //void accept(Visitor *visitor){visitor->visit(this);}
 };
 
 

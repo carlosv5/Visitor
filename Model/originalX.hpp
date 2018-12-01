@@ -3,7 +3,6 @@
 
 #include "original.hpp"
 #include "e21.hpp"
-class Visitor;
 
 class OriginalX : public Original
 {

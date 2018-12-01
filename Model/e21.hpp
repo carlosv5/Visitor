@@ -8,7 +8,7 @@ class E21 : public E2
 {
   public:
     E21(){};
-    void accept(Visitor *visitor){visitor->visit(this);}
+    //void accept(Visitor *visitor){visitor->visit(this);}
 };
 
 
