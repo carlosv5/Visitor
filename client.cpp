@@ -10,8 +10,8 @@ int main(){
 		ox.accept(new V12()); */
 		ox->accept(new Visitor20());
 		
-/* 		OY oy = new OY();
-		oy.accept(new V11());
-		oy.accept(new V12());
-		oy.accept(new V20()); */
+ 		OriginalY *oy = new OriginalY();
+/* 		oy.accept(new V11());
+		oy.accept(new V12()); */
+		oy->accept(new Visitor20());
 }

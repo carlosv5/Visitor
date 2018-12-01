@@ -9,7 +9,6 @@ class Original
 {
   public:
   Original(){
-    std::cout << "Original constructor" << std::endl;
 		a = 0;
 		e1 = new E1();
 	}

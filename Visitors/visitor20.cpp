@@ -13,10 +13,10 @@ void Visitor20::visit(OriginalX *ox){
     ox->getE1().accept(this);
 }
 
-/*  void Visitor20::visit(OriginalY *oy){
+ void Visitor20::visit(OriginalY *oy){
     cout << "I'm visitor20 and I'm visiting OriginalY" << endl;
-     oy->getE1()->accept(this);
-    oy->getE3()->accept(this); 
+    oy->getE1().accept(this);
+    oy->getE3().accept(this); 
 }
 
 void Visitor20::visitA(int a){
@@ -26,12 +26,12 @@ void Visitor20::visitA(int a){
 void Visitor20::visitB(int b){
     cout << "I'm visitor20 and I'm visiting b" << endl;
 }
- */
+
 void Visitor20::visit(E1 *e1){
     cout << "I'm visitor20 and I'm visiting E1" << endl;
 }
 
-/* void Visitor20::visit(E21 *e21){
+void Visitor20::visit(E21 *e21){
     cout << "I'm visitor20 and I'm visiting E21" << endl;   
 }
 
@@ -41,5 +41,5 @@ void Visitor20::visit(E22 *e22){
 
 void Visitor20::visit(E3 *e3){
     cout << "I'm visitor20 and I'm visiting E3" << endl;
-}  */
+} 
 

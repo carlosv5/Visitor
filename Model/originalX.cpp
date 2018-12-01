@@ -6,7 +6,6 @@ using namespace std;
 
 OriginalX::OriginalX()
 {
-    std::cout << "OriginalX constructor" << std::endl;
     e2 = new E21();
     b = 5;
 };

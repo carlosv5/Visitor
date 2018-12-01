@@ -1,7 +1,6 @@
-/* 
+
 #include "originalY.hpp"
 #include <iostream>
-#include "../Visitors/visitor.hpp"
 
 using namespace std;
 
@@ -17,4 +16,3 @@ void OriginalY::accept(Visitor *visitor){
 E3 OriginalY::getE3(){
     return *e3;
 }
- */
