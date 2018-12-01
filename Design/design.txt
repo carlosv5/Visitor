@@ -1,0 +1,75 @@
+@startuml
+package "Model"{
+class Original{
+{field}  - int a;
+{field}  - E1 *e1;
+{field}  - E2 *e2;
+{method} + void accept(Visitor *visitor);
+}
+class OriginalX{
+{field}  -int b;
+{method} + void accept(Visitor *visitor);
+{method} + int getB();
+}
+
+class OriginalY{
+{field}  - E3 *e3;
+{method} + int getE3();
+}
+
+Original <|-- OriginalX
+Original <|-- OriginalY
+}
+
+package "Visitors"{
+class Visitor{
+{method} + void visit(OriginalX *ox);
+{method} + void visit(OriginalY *oy);
+{method} + void visitA(int a);
+{method} + void visitB(int b); 
+{method} + void visit(E1 *e1);
+{method} + void visit(E21 *e21);
+{method} + void visit(E22 *e22);
+{method} + void visit(E3 *e3);
+}
+
+class Visitor10{
+{method} + void visit(OriginalX *ox);
+{method} + void visit(OriginalY *oy);
+}
+
+class Visitor11{
+{method} + void visitA(int a);
+{method} + void visitB(int b); 
+{method} + void visit(E1 *e1);
+{method} + void visit(E21 *e21);
+{method} + void visit(E22 *e22);
+{method} + void visit(E3 *e3);
+}
+
+class Visitor12{
+{method} + void visitA(int a);
+{method} + void visitB(int b); 
+{method} + void visit(E1 *e1);
+{method} + void visit(E21 *e21);
+{method} + void visit(E22 *e22);
+{method} + void visit(E3 *e3);
+}
+
+class Visitor20{
+{method} + void visit(OriginalX *ox);
+{method} + void visit(OriginalY *oy);
+{method} + void visitA(int a);
+{method} + void visitB(int b); 
+{method} + void visit(E1 *e1);
+{method} + void visit(E21 *e21);
+{method} + void visit(E22 *e22);
+{method} + void visit(E3 *e3);
+}
+
+Visitor <|-- Visitor10
+Visitor10 <|-- Visitor11
+Visitor10 <|-- Visitor12
+Visitor <|-- Visitor20
+}
+@enduml
