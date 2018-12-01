@@ -3,17 +3,18 @@
 
 #include "original.hpp"
 #include "e21.hpp"
+class Visitor;
 
-namespace Model{
 class OriginalX : public Original
 {
   public:
     OriginalX();
-    void accept(Visitors::Visitor visitor);
+    void accept(Visitor *visitor);
+    int getB();
 
   private:
     int b;
 };
-}
+
 
 #endif

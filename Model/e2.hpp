@@ -1,10 +1,13 @@
 #ifndef E2_MODEL
 #define E2_MODEL
+class Visitor;
 
-namespace Model{
+
 class E2
 {
+    protected:
+     void accept(Visitor visitor);
 };
-}
+
 
 #endif

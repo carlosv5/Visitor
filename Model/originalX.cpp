@@ -3,20 +3,22 @@
 #include <iostream>
 
 using namespace std;
-namespace Model{
 
 OriginalX::OriginalX()
 {
-    a = 8;
-    e1 = new E1();
+    std::cout << "OriginalX constructor" << std::endl;
     e2 = new E21();
     b = 5;
 };
 
-void OriginalX::accept(Visitors::Visitor visitor){
-    
+void OriginalX::accept(Visitor *visitor){
+    visitor->visit(this);
+}
+
+int OriginalX::getB(){
+    return b;
 }
 
 
-}
+
 

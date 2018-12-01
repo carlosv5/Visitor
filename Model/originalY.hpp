@@ -4,18 +4,19 @@
 #include "original.hpp"
 #include "e22.hpp"
 #include "e3.hpp"
+class Visitor;
 
-namespace Model{
 class OriginalY : public Original
 {
   public:
     OriginalY();
-    void accept(Visitors::Visitor visitor);
+    void accept(Visitor *visitor);
+    E3 getE3();
+
 
   private:
-    int b;
     E3 *e3;
 };
-}
+
 
 #endif

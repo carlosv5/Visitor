@@ -4,14 +4,19 @@
 #include "../Model/e1.hpp"
 #include "../Model/e3.hpp"
 
-namespace Visitors{
 class Visitor20 : public Visitor
 {
     public:
         Visitor20();
-        void visitE1(Model::E1 *e1);
-        void visitE3(Model::E3 *e3);
+        void visit(OriginalX *ox);
+        void visit(OriginalY *oy);
+        void visitA(int a);
+        void visitB(int b);
+        void visit(E1 *e1);
+        void visit(E21 *e21);
+        void visit(E22 *e22);
+        void visit(E3 *e3);
 };
-}
+
 
 #endif

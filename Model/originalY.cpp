@@ -1,17 +1,19 @@
 
 #include "originalY.hpp"
 #include <iostream>
+#include "../Visitors/visitor.hpp"
 
 using namespace std;
-namespace Model{
 
 OriginalY::OriginalY()
 {
-    a = 1;
-    e1 = new E1();
     e2 = new E22();
+    e3 = new E3();
 };
-void OriginalY::accept(Visitors::Visitor visitor){
-    
+void OriginalY::accept(Visitor *visitor){
+    visitor->visit(this);
 }
+
+E3 OriginalY::getE3(){
+    return *e3;
 }
